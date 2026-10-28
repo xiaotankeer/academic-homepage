@@ -1,19 +1,22 @@
-# 🧑‍🚀 Personal Homepage Template
+# Xiao Tan — Academic Homepage
 
-This repository is a reusable academic and personal homepage template. The visible profile belongs to a fictional person; names, affiliations, projects, publications, awards, and contact details are sample content only.
+A minimal, static academic homepage for Xiao Tan. It shows only basic contact information. Publications, projects, affiliations, and awards are intentionally omitted until their details are supplied.
 
-Start locally with:
+## Preview locally
 
 ```bash
 python3 -m http.server 8080 --bind 127.0.0.1
 ```
 
-Before publishing, replace the sample identity and links in `index.html` and the placeholder assets in `images/template/`.
+Open <http://127.0.0.1:8080/>.
 
-This homepage benefits from many projects and tools, including but not limited to:
+## Update the page
 
-- Claude Code with Opus 4.6
-- CodeX with GPT-5.5
-- Audio-Interaction: https://xzf-thu.github.io/Audio-Interaction/
+- Edit `index.html` for the name, introduction, email, and GitHub link.
+- Add research interests, publications, or projects inside `<main>` when ready. A comment marks the insertion point.
+- Edit `stylesheet.css` to adjust the visual design.
+- Replace the monogram artwork with a real portrait if desired.
 
-> Keep the layout, customize the content, and make it yours.
+## Publish with GitHub Pages
+
+In the repository settings, choose **Pages → Build and deployment → Deploy from a branch**, then select **main** and **/(root)**. The resulting URL will normally be `https://xiaotankeer.github.io/academic-homepage/`.
