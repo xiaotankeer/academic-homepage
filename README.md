@@ -1,6 +1,6 @@
 # Xiao Tan — Academic Homepage
 
-A minimal, static academic homepage for Xiao Tan. It shows only basic contact information. Publications, projects, affiliations, and awards are intentionally omitted until their details are supplied.
+A minimal, static academic homepage for Xiao Tan based on the original template's layout and visual style. It shows only basic contact information. Publications, projects, affiliations, and awards are intentionally omitted until their details are supplied.
 
 ## Preview locally
 

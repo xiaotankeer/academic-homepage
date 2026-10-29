@@ -1,56 +1,85 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Xiao Tan's academic homepage and contact information.">
   <meta name="author" content="Xiao Tan">
+  <meta name="description" content="Xiao Tan's academic homepage and contact information.">
   <title>Xiao Tan | Academic Homepage</title>
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/svg+xml" href="images/template/avatar.svg">
+  <style>
+    body, * { cursor: url('images/icon/cursor.png'), auto; }
+    a, a * { cursor: url('images/icon/cursor-pointer.png'), pointer !important; }
+    .profile-spacer { height: 70px; }
+    @media (max-width: 680px) {
+      .profile-spacer { height: 30px; }
+      .profile-table, .profile-table tbody, .profile-table tr, .profile-table td { display: block; width: 100% !important; max-width: none !important; }
+      .profile-image { width: min(56%, 220px) !important; display: block; margin: 10px auto 30px; }
+    }
+  </style>
 </head>
 <body>
   <main>
-    <div class="page-shell">
-      <header class="site-header">
-        <a class="site-mark" href="#" aria-label="Xiao Tan, home">XT<span>.</span></a>
-        <span class="site-label">Academic Homepage</span>
-      </header>
-      <section class="intro" aria-labelledby="intro-title">
-        <div class="intro-copy">
-          <p class="eyebrow">Welcome</p>
-          <h1 id="intro-title">Xiao Tan<span>.</span></h1>
-          <p class="subtitle">Academic homepage</p>
-          <p class="description">Welcome to my personal academic homepage. You can reach me by email or find my work on GitHub.</p>
-          <div class="links" aria-label="Contact links">
-            <a class="button primary" href="mailto:xiao.tan.transportation@gmail.com">Email me <span aria-hidden="true">↗</span></a>
-            <a class="button" href="https://github.com/xiaotankeer" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-          </div>
-          <p class="email-address">xiao.tan.transportation@gmail.com</p>
-        </div>
-        <div class="intro-art" aria-hidden="true">
-          <div class="orbit"></div>
-          <div class="orbit second"></div>
-          <div class="monogram">XT</div>
-          <span class="art-caption">Xiao Tan</span>
-        </div>
-      </section>
-      <!-- Add verified research interests, publications, and projects here when available. -->
-    </div>
+    <table id="about" class="page-section" style="width:100%;max-width:800px;border:0;border-spacing:0;border-collapse:separate;margin:0 auto"><tbody>
+      <tr><td style="padding:0">
+        <div class="profile-spacer" aria-hidden="true"></div>
+        <table class="profile-table" style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto"><tbody>
+          <tr>
+            <td style="padding:2.5%;width:68%;vertical-align:middle">
+              <p style="text-align:center"><name>Xiao Tan</name></p>
+              <p>I am Xiao Tan. Welcome to my academic homepage.</p>
+              <div style="width:100%;height:1px;background:linear-gradient(to right,transparent,#ccc 20%,#ccc 80%,transparent);margin:18px 0"></div>
+              <p class="contact-links">
+                <span class="contact-line">
+                  <a href="mailto:xiao.tan.transportation@gmail.com" class="email-link" title="Email Xiao Tan">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path>
+                    </svg>
+                    Email: <span class="contact-sub">xiao.tan.transportation@gmail.com</span>
+                  </a>
+                </span>
+                <span class="contact-line">
+                  <a href="https://github.com/xiaotankeer" target="_blank" rel="noopener noreferrer" title="Xiao Tan on GitHub">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 .5C5.7.5.6 5.6.6 11.9c0 5 3.3 9.3 7.9 10.8.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.5 2.7 3.2 1.9.1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.5.2 2.8.1 3.1.8.9 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.8C23.4 5.6 18.3.5 12 .5Z"></path>
+                    </svg>
+                    GitHub
+                  </a>
+                </span>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <img class="profile-image" style="width:85%;max-width:85%;border-radius:8px" alt="Decorative XT monogram" src="images/template/avatar.svg">
+            </td>
+          </tr>
+        </tbody></table>
+      </td></tr>
+    </tbody></table>
+    <!-- Add publications and projects here when verified information is available. -->
   </main>
-  <footer class="mountain-footer">
-    <picture>
-      <source type="image/webp" srcset="images/experience/background-960.webp 960w, images/experience/background-1440.webp 1440w, images/experience/background-1920.webp 1920w" sizes="100vw">
-      <img src="images/experience/background.jpeg" alt="Snowy mountain landscape" loading="lazy" decoding="async">
-    </picture>
-    <div class="footer-shade"></div>
-    <div class="footer-content">
-      <p class="footer-kicker">Let's connect</p>
-      <h2>Get in touch.</h2>
-      <a class="footer-email" href="mailto:xiao.tan.transportation@gmail.com">xiao.tan.transportation@gmail.com <span aria-hidden="true">↗</span></a>
-      <p class="copyright">© <span id="year">2026</span> Xiao Tan</p>
+
+  <section class="mountain-footer" aria-label="Footer landscape">
+    <div class="mountain-stage">
+      <picture>
+        <source type="image/webp" srcset="images/experience/background-960.webp 960w, images/experience/background-1440.webp 1440w, images/experience/background-1920.webp 1920w" sizes="100vw">
+        <img class="mountain-img" src="images/experience/background.jpeg" alt="Planetary landscape" loading="lazy" decoding="async" fetchpriority="low"
+             onerror="this.style.display='none'; this.closest('picture').nextElementSibling.style.display='block';">
+      </picture>
+      <div class="mountain-fallback" style="display:none;"></div>
+      <div class="mountain-content">
+        <h2>Keep Exploring</h2>
+        <p class="mountain-sub">Get in touch with me by email.</p>
+        <a href="mailto:xiao.tan.transportation@gmail.com" class="mountain-cta">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          <span>Get in Touch</span>
+        </a>
+        <p class="mountain-footnote">
+          <span>© <span id="year">2026</span> Xiao Tan</span>
+        </p>
+      </div>
     </div>
-  </footer>
+  </section>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
